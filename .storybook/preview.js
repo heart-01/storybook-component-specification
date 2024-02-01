@@ -1,5 +1,9 @@
 /** @type { import('@storybook/react').Preview } */
 import "../src/tailwind.css";
+import { initialize, mswLoader } from "msw-storybook-addon";
+
+// Initialize MSW
+initialize();
 
 const preview = {
   parameters: {
@@ -11,6 +15,7 @@ const preview = {
       },
     },
   },
+  loaders: [mswLoader],
 };
 
 export default preview;
