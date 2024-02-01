@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "./components/Modal";
+import Modal from "./components/Modal/Modal";
 
 const App = () => {
   const [onClickOpenModal, setOnClickOpenModal] = useState(false);
