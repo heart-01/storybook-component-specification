@@ -8,7 +8,7 @@ describe("Counter Component", () => {
   });
 
   it("should render counter", () => {
-    expect(screen.getByText(/Counters:/)).toBeInTheDocument();
+    expect(screen.getByText(/Counter:/)).toBeInTheDocument();
   });
 
   it("increments counter", () => {
